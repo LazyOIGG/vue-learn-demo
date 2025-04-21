@@ -10,6 +10,8 @@ import TheWelcome from './components/TheWelcome.vue'
     <div class="wrapper">
       <HelloWorld msg="You fucked it!" />
     </div>
+
+    <div class="text-4l text-red border p-4">My Test String</div>
   </header>
 
   <main>
