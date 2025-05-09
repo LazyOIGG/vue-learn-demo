@@ -2,7 +2,7 @@
   <div class="container">
     <div class="left">
       <header>
-        <img class="avatar" src="/assets/images/avatar.jpg" alt="阿尔玛头像" />
+        <img class="avatar" src="/assets/images/avatar.jpg" alt="阿尔玛头像"/>
         <a class="name" href="https://www.monsterhunter.com/wilds/zh-hans/characters/">阿尔玛</a>
         <div class="title">猎人公会助理</div>
       </header>
