@@ -78,7 +78,6 @@
 </template>
 
 <script setup lang="ts">
-// 此处可以添加必要的逻辑，如响应式数据、方法等
 </script>
 
 <style scoped src="./assets/styles.css"></style>
