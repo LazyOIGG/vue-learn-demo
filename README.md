@@ -1,33 +1,59 @@
-# vue-learn-demo
+# Vue Learn Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+## 项目简介
+这是一个 Vue 3 学习项目，用于实践和掌握 Vue 相关技术栈。
 
-## Recommended IDE Setup
+## 技术栈
+- Vue 3
+- TypeScript
+- Vite
+- UnoCSS
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+## 项目结构
+```
+vue-learn-demo/
+├── public/              # 静态资源
+│   └── assets/
+│       ├── icons/       # 图标资源
+│       └── images/      # 图片资源
+├── src/
+│   ├── assets/          # 项目资源
+│   │   ├── main.css     # 主样式文件
+│   │   └── styles.css   # 样式文件
+│   ├── App.vue          # 根组件
+│   └── main.ts          # 应用入口
+├── .gitignore           # Git忽略配置
+├── index.html           # 主HTML文件
+├── package.json         # 项目配置
+├── vite.config.ts       # Vite配置
+└── uno.config.ts        # UnoCSS配置
 ```
 
-### Compile and Hot-Reload for Development
+## 快速开始
 
-```sh
-npm run dev
+### 安装依赖
+```bash
+pnpm install
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+### 开发模式
+```bash
+pnpm dev
 ```
+
+### 生产构建
+```bash
+pnpm build
+```
+
+### 预览生产版本
+```bash
+pnpm preview
+```
+
+## 注意事项
+- 项目使用 pnpm 作为包管理器
+- 开发时请确保 Node.js 版本 >= 16.0.0
+- 主要样式使用 UnoCSS 处理
+
+Happy Coding! 🚀
