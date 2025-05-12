@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-let newTaskText= ref("abc");
+let newTaskText= ref("");
 let todoList = ref([
   { id: 1, text: "吃饭", completed: false },
   { id: 2, text: "睡觉", completed: false },
