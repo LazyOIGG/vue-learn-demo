@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import TodoItem from "@/TodoItem.vue";
 
 let newTaskText= ref("");
 let todoList = ref([
@@ -46,12 +47,7 @@ class todoItem {
     </div>
 
     <div class="mt-2em mx-2em">
-      <div v-for="item in todoList" :key="item.id" class="flex justify-between items-center mb-2">
-        <div class="w-3/4">
-          <el-checkbox v-model="item.completed">{{ item.text }}</el-checkbox>
-        </div>
-        <el-button type="danger" @click="onDeleteClicked(item.id)">删除</el-button>
-      </div>
+      <TodoItem v-for="item in todoList" :key="item.id" :itemData="item" @onDeleteClicked="onDeleteClicked"></TodoItem> <!--itemData将父组件的对象传递到子组件 等号左来自子组件-->
     </div>
   </div>
 </template>
